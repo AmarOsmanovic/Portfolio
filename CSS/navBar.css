@@ -1,0 +1,107 @@
+@import "https://use.fontawesome.com/releases/v6.2.0/css/all.css";
+
+
+nav {
+    background: linear-gradient(to left, rgb(14, 14, 29), rgb(24, 24, 77));
+}
+
+
+
+
+
+
+#navv {
+    color: var(--accent-color);
+    cursor: pointer;
+    padding-left: 2%;
+    text-decoration: none;
+}
+
+#profilnaSlika {
+    height: 60px;
+    width: 100%;
+    border: 0.5px solid var(--secondary-text);
+    border-radius: 300px;
+    opacity: 0.8;
+}
+
+#profilnaSlika:hover {
+    border-color: var(--primary-text);
+    opacity: 1;
+}
+
+#navHamburger {
+
+    color: var(--accent-color);
+    background-color: transparent;
+    border-color: var(--accent-color);
+    margin-right: 2%;
+}
+
+#navHamburger:hover {
+    background-color: var(--accent-color-hover);
+    color: var(--navBar-color);
+}
+
+#navHamburger:focus {
+    box-shadow: none;
+}
+
+
+#offCanvas {
+    background-color: var(--navBar-color);
+
+}
+
+#offCanvasLabel {
+    color: var(--primary-text);
+}
+
+.offcanvas-body li {
+    background-color: var(--navBar-color);
+    color: var(--secondary-text)
+}
+
+.offcanvas-body li:hover {
+    border-radius: 0.375rem;
+    cursor: pointer;
+    color: var(--accent-color);
+    background-color: var(--bottom-gradient);
+}
+
+.offcanvas-body a {
+    text-decoration: none;
+}
+
+
+#searchForm {
+    margin-top: 4%;
+    background-color: var(--bottom-gradient);
+    border-color: var(--top-gradient);
+}
+
+#searchForm::placeholder {
+    color: var(--secondary-text)
+}
+
+#searchForm:focus {
+    box-shadow: none;
+    color: var(--primary-text);
+    border-color: var(--secondary-text);
+}
+
+#searchBtn {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    margin-top: 4%;
+
+}
+
+#searchBtn:hover,
+#searchBtn:active,
+#searchBtn:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-text);
+    box-shadow: none;
+
+}

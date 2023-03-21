@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ba">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/navBar.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/blog.css">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amar Osmanović</title>
+    <link rel="icon" href="../SLIKE/icons8-inspect-code-16.png">
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top bg">
+        <a id="navv" href="../index.html"><img src="../SLIKE/navSlika.png" id="profilnaSlika" alt="Slika autora"></a>
+
+        <button id="navHamburger" class="btn btn-primary" data-bs-toggle="offcanvas" href="#offCanvas" role="button"
+            aria-controls="offcanvasExample"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+    <header class="navBar">
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offCanvas"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offCanvasLabel" style="padding-left: 16px;">Meni</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-group list-group-flush">
+                    <a href="#1">
+                        <li class="list-group-item" data-bs-dismiss="offcanvas"><i class="fa-solid fa-layer-group"
+                                style="padding-right: 0.51rem;"></i>Kako započeti uspješnu IT karijeru</li>
+                    </a>
+                    <a href="#pocetak">
+                        <li class="list-group-item" data-bs-dismiss="offcanvas"><i class="fa-solid fa-layer-group"
+                                style="padding-right: 0.51rem;"></i>8 iPhone savjeta za uštedu vremena</li>
+                    </a>
+                    <a href="../index.html">
+                        <li class="list-group-item" data-bs-dismiss="offcanvas"><i class="fa-solid fa-arrow-left"
+                                style="padding-right: 0.52rem;padding-left: 0.2rem;"></i>Nazad</li>
+                    </a>
+                </ul>
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" id="searchForm" type="search" placeholder="Upiši.."
+                            aria-label="upiši.." autocomplete="off">
+                        <button class="btn btn-outline-success" id="searchBtn" type=""
+                            data-bs-dismiss="offcanvas">Pretražuj</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <article class="karijera" id="pocetak1">
+        <div class="container-fluid p-3 text-white text-center" style="background-color: var(--bottom-gradient);">
+            <h2 id="naslov1">Kako započeti uspješnu IT karijeru</h2>
+        </div>
+        <br>
+        <div class="container rounded" style="background-color: rgb(110, 110, 110);">
+            <div class="dropdown text-right">
+                <button id="sadrzajBtn" class="btn btn-secondary dropdown-toggle"
+                    style="margin-top: 1%; margin-bottom: 1%; " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Sadržaj
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#1" onclick="blog1Dodatno()">1. Istražiti uloge i pozicije</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#2" onclick="blog1Dodatno()">2. Analizirajte svoja očekivanja</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#3" onclick="blog1Dodatno()">3. Naučite kodirati</a></li>
+                    <li><a class="dropdown-item" href="#4" onclick="blog1Dodatno()">4. Dobijte diplomu</a></li>
+                    <li><a class="dropdown-item" href="#5" onclick="blog1Dodatno()">5. Steknite iskustvo</a></li>
+                    <li><a class="dropdown-item" href="#6" onclick="blog1Dodatno()">6. Mreža sa IT profesionalcima</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#7" onclick="blog1Dodatno()">7. Pripremite se za IT intervju za
+                            posao</a></li>
+                    <li><a class="dropdown-item" href="#8" onclick="blog1Dodatno()">8. Odaberite pravu karijeru</a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="container rounded" style="background-color: var(--top-gradient);">
+                <br>
+                <h4 id="1">1. Istražiti uloge i pozicije</h4>
+                <div class="row">
+                    <div class="col-sm-7 p-3">
+                        <p>IT je jedan od najraznovrsnijih polja za rad,
+                            sa mnogo različitih puteva za izabrati. Istraživanje
+                            je najbolji način da shvatite šta vas zanima i čemu
+                            želite da se posvetite u vašoj karijeri. Neke zanimljive
+                            profesije u IT sektoru uključuju:
+                        <ul>
+                            <li>Sistem administrator,</li>
+                            <li>Mrežni inžinjer,</li>
+                            <li>Softver developer,</li>
+                            <li>DevOps specijalista</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 p-2"><img class="rounded"
+                            src="https://cdn-icons-png.flaticon.com/512/599/599220.png" alt="Istraživanje lupom"
+                            style="margin-bottom: 15%;margin-left: 40%;"></div>
+                </div>
+            </div>
+            <br>
+            <div id="Blog1Nastavak" style="display: none;">
+                <div class="container rounded" style="background-color: var(--top-gradient);">
+                    <br>
+                    <h4 id="2">2. Analizirajte svoja očekivanja</h4>
+                    <div class="row">
+                        <div class="col-sm-8 p-3">
+                            <p>Analiza vaših očekivanja odličan je način da odaberete
+                                u kojoj oblasti IT ćete uživati. Na primjer, ako želite da radite u dinamičnom
+                                timu i imate priliku da radite zajedno sa drugim talentovanim IT stručnjacima,
+                                možete razmisliti o izboru uloge koja se odnosi na mrežni inženjering. Mnogi
+                                mrežni inženjeri rade na licu mjesta, pomažući kompanijama da osiguraju stabilnost
+                                svog hardvera i bežičnih mreža. Slično tome, ako biste radije radili od kuće i
+                                imali fleksibilan dnevni raspored, karijera u razvoju softvera bi mogla biti bolja
+                                opcija za vas.
+                            </p>
+                        </div>
+                        <div class="col-sm-4 p-4"><img class="rounded"
+                                src="https://bouwkennis.nl/wp-content/uploads/2022/06/002-Visual_Analyse-op-maat-768x573.png"
+                                alt="Analiziranje" style="margin-bottom: 10%;"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="container rounded" style="background-color: var(--top-gradient);">
+                    </table>
+                    <br>
+                    <h4 id="3">3. Naučite kodirati</h4>
+                    <div class="row">
+                        <div class="col-sm-8 p-3">
+                            <p>
+                                Učenje kodiranja jedna je od najvažnijih stvari koje možete učiniti da biste
+                                se pripremili za karijeru u IT-u. Posvećenost redovnom samousavršavanju i
+                                učenju novih vještina kodiranja odličan je način da poradite na svojim
+                                organizacijskim vještinama i vještinama upravljanja vremenom. Možete odabrati
+                                da se upišete na jedan od dostupnih online kurseva ili učestvujete u kampovima
+                                kodiranja.
+                                Ono što je sjajno kod kodiranja je to što se također možete besplatno obrazovati i
+                                poboljšati
+                                svoje vještine programiranja kod kuće. Da biste to postigli, razmislite o praćenju nekih
+                                online tutorijala i korištenju drugih obrazovnih materijala koje iskusni programeri ili
+                                IT
+                                stručnjaci dijele na mreži. Također možete odabrati da učite iz specifikacija jezika
+                                kodiranja
+                                koje dijele kreatori jezika.
+                            </p>
+                        </div>
+                        <div class="col-sm-4 p-4"><img class="rounded"
+                                src="https://cdn-icons-png.flaticon.com/512/1802/1802977.png" alt="Učenje kodiranja"
+                                style="margin-bottom: 10%;"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="container rounded" style="background-color: var(--top-gradient);">
+                    <br>
+                    <h4 id="4">4. Dobijte diplomu</h4>
+                    <div class="row">
+                        <div class="col-sm-8 p-3">
+                            <p>
+
+                                Iako je stjecanje diplome opciono za mnoge IT karijere, uključujući razvoj softvera,
+                                može
+                                biti korisno za rad na poslovima vezanim za inženjering, kao što je mrežni inženjer. Ako
+                                još uvijek niste sigurni u kojem smjeru ići i koju IT specijalizaciju odabrati, možete
+                                razmisliti o dodiplomskom studiju informacionih tehnologija ili računarskih nauka.
+                                Završetak ovih diploma mogao bi vas opremiti opštijim znanjem o ovoj oblasti i pomoći
+                                vam da odaberete usku specijalizaciju za svoj master.
+                            </p>
+                        </div>
+                        <div class="col-sm-4 p-4"><img class="rounded"
+                                src="https://pics.clipartpng.com/Graduation_Cap_with_Diploma_PNG_Clipart-375.png"
+                                alt="Diploma" style="margin-bottom: 10%;"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="container rounded" style="background-color: var(--top-gradient);">
+                    <br>
+                    <h4 id="5">5. Steknite iskustvo</h4>
+                    <div class="row">
+                        <div class="col-sm-8 p-3">
+                            <p>
+
+                                Stjecanje iskustva je bitan korak da poboljšate profil vašeg kandidata
+                                i postanete visoko kvalifikovani kandidat. Ako ste još uvijek novi u
+                                svijetu IT-a, možete prvo razmisliti o radu na projektu otvorenog koda.
+                                Na ovaj način možete steći iskustvo s kodiranjem kreiranjem ili doprinosom
+                                online timskim projektima koje zatim možete uključiti u svoj portfelj. Da biste
+                                doprinijeli ovakvom projektu, možete otići na platformu otvorenog koda i pronaći
+                                online zajednice koje koriste drugi programeri.
+                            </p>
+                        </div>
+                        <div class="col-sm-3 p-4"><img class="rounded"
+                                src="https://cdn-icons-png.flaticon.com/512/4185/4185758.png " alt="Sticanje iskustva"
+                                style="margin-bottom: 10%;margin-left: 15%;"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="container rounded" style="background-color: var(--top-gradient);">
+                    <br>
+                    <h4 id="6">6. Mreža sa IT profesionalcima</h4>
+                    <div class="row">
+                        <div class="col-sm-8 p-3">
+                            <p>
+                                Umrežavanje sa drugim IT profesionalcima je odličan način da izgradite važne
+                                profesionalne odnose ili čak povećate svoje šanse da dobijete preporuku za
+                                posao. Za umrežavanje razmislite o tome da kontaktirate iskusne IT stručnjake
+                                na mreži ili prisustvujete industrijskim događajima i konferencijama. Još jedan
+                                sjajan način da upoznate nove ljude u IT-u je da provjerite sa svojim lokalnim
+                                poslovnim organizacijama ili publikacijama.
+                            </p>
+                        </div>
+                        <div class="col-sm-3 p-4"><img class="rounded"
+                                src="https://cdn.pixabay.com/photo/2020/08/22/14/33/social-media-5508549_960_720.png"
+                                alt="Slika ljudskog umrežavanja" style="margin-bottom: 10%;margin-left: 20%;"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="container rounded" style="background-color: var(--top-gradient);">
+                    <br>
+                    <h4 id="7">7. Pripremite se za IT intervju za posao</h4>
+                    <div class="row">
+                        <div class="col-sm-8 p-3">
+                            <p>
+                                Priprema za razgovor za posao važan je dio bavljenja bilo kojom karijerom.
+                                Ako vam predstoji IT intervju, možete razmisliti o pregledu uobičajenih
+                                pitanja za IT intervju pored pripreme uzorka odgovora na opštija pitanja
+                                o vašoj prošlosti. Budite sigurni da znate kako da istaknete svoje prednosti
+                                i naučite kako da pričate o svojim važnim profesionalnim dostignućima.
+
+                            </p>
+                        </div>
+                        <div class="col-sm-3 p-4"><img class="rounded"
+                                src="https://www.pngmart.com/files/21/Job-Interview-PNG-Isolated-Photo.png"
+                                alt="Slika intervju-a" style="margin-bottom: 10%;margin-left: 20%;"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="container rounded col-xl-12 p-3 md-3 text-center"
+                    style="background-color: var(--top-gradient)" ;>
+                    <br>
+                    <h4 class="text-left" id="8">8. Odaberite pravu karijeru</h4>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zhpcgpqWc1Q"
+                        title="Nađi pravu karijeru" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <br>
+            </div>
+            <div class="container-fluid text-center" id="blog1-vise"><button type="submit"
+                    class="btn btn-primary rounded" onClick="blog1Dodatno()">Prikaži više</button></div>
+            <div class="container-fluid text-center" id="blog1-manje" style="display: none;"><a href="#pocetak1"><button
+                        type="submit" class="btn btn-primary rounded" onClick="blog1Skraceno()">Prikaži
+                        manje</button></a></div>
+            <br>
+        </div>
+    </article>
+    <br>
+    <br>
+
+    <article class="iphoneSavjeti" id="pocetak2">
+        <div class="container-fluid p-3 text-white text-center" style="background-color: var(--bottom-gradient);">
+            <h2>8 iPhone savjeta za uštedu vremena</h2>
+        </div>
+        <br>
+        <div class="container rounded" style="background-color: rgb(110, 110, 110);">
+            <div class="dropdown text-right">
+                <button id="sadrzajBtn" class="btn btn-secondary dropdown-toggle"
+                    style="margin-top: 1%; margin-bottom: 1%; " type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Sadržaj
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#pocetak" onclick="blog2Dodatno()">0. Početak</a></li>
+                    <li><a class="dropdown-item" href="#1" onclick="blog2Dodatno()">1. Brzo prebacivanje sa brojeva na
+                            slova</a></li>
+                    <li><a class="dropdown-item" href="#2" onclick="blog2Dodatno()">2. Uklonite posljednji broj u
+                            izračunima</a></li>
+                    <li><a class="dropdown-item" href="#3" onclick="blog2Dodatno()">3. Dodijelite funkciju Back Tap</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#4" onclick="blog2Dodatno()">4. Prevucite jačinu zvuka</a></li>
+                    <li><a class="dropdown-item" href="#5" onclick="blog2Dodatno()">5. Koristite skrivenu dodirnu
+                            tablu</a></li>
+                    <li><a class="dropdown-item" href="#6" onclick="blog2Dodatno()">6. Dugo pritisnite tipke za
+                            povratak</a></li>
+                    <li><a class="dropdown-item" href="#7" onclick="blog2Dodatno()">7. Brzopotezni video</a></li>
+                    <li><a class="dropdown-item" href="#8" onclick="blog2Dodatno()">8. Kopirajte i zalijepite uređivane
+                            fotografije</a></li>
+
+
+                </ul>
+            </div>
+            <br>
+            <div class="container rounded " style="background-color: var(--top-gradient);">
+
+                <br>
+                <div id="pocetak" class="row justify-content-center">
+                    <div class="col-sm-6 p-3">
+                        <p>Ako želite da smanjite količinu vremena koje provodite
+                            obavljajući određene radnje na svom iPhoneu, obično postoji rješenje skriveno u
+                            Appleovom mobilnom operativnom sistemu. Evo 12 brzih iOS savjeta koji će vam, kada
+                            počnete koristiti, dugoročno učiniti mnogo efikasnijim.
+                        </p>
+                    </div>
+                    <div class=" col-sm-3"><img class="rounded"
+                            src="https://images.macrumors.com/t/39hWFMjyzP6HwXoq4AXQbUmXCGA=/800x0/article-new/2022/09/iPhone-14-Pro-Display-Two-Times-Brighter-Feature.jpg?lossy"
+                            alt="iPhone" style="margin-bottom: 10%;margin-left: 20%;"></div>
+                </div>
+            </div>
+            <br>
+            <div id="Blog2Nastavak" style="display: none;">
+                <div class="container rounded" style="background-color: var(--top-gradient);">
+                    <br>
+                    <h4 id="1">1. Brzo prebacivanje sa brojeva na slova</h4>
+                    <div class="row">
+                        <div class="col-sm-8 p-3">
+                            <p>
+                                Prebacivanje tastature na ekranu kada treba da unesete broj ili simbol
+                                je prečesta pojava na iPhone-u, pa evo saveta kako da prelazak učinite superbrzom.
+
+                            </p>
+                        </div>
+                        <div class="col-sm-5 p-2"><img class="rounded"
+                                src="https://images.macrumors.com/t/iLBCftdlRWaYQJjW_9QWr0_P0V8=/800x0/article-new/2022/11/quick-switch-keyboard.jpg?lossy"
+                                alt="Slika intervju-a" style="margin-bottom: 5%;margin-left: 20%;"></div>
+                        <div class="col-sm-8 p-3">
+                            <p>
+                                Umjesto da dodirnete tipku "123" da biste se prebacili na tastaturu s
+                                brojevima/simbolima,
+                                držite je i prevucite prstom do željene tipke, a zatim je pustite. Ova pojedinačna
+                                radnja
+                                upisuje broj/simbol i automatski vas vraća na abecedni raspored, izbjegavajući potrebu
+                                za
+                                izvođenjem tri odvojena dodira za postizanje istog rezultata.
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container rounded" style="background-color: var(--top-gradient);">
+                    <br>
+                    <h4 id="2">2. Uklonite posljednji broj u izračunima</h4>
+                    <div class="row">
+                        <div class="col-sm-8 p-3">
+                            <p>
+                                Uobičajena je zabluda da ako unesete pogrešan broj u aplikaciju Kalkulator, cijeli zbir
+                                morate započeti iznova. Srećom, to nije slučaj: jednostavno prevucite prstom udesno ili
+                                ulijevo preko ekrana brojeva da biste uklonili posljednji broj koji ste upisali i
+                                ponovite
+                                radnju ako je potrebno da uklonite nekoliko brojeva..
+
+                            </p>
+                        </div>
+                        <div class="col-sm-5 p-2"><img class="rounded"
+                                src="https://images.macrumors.com/t/p8vpU93y9kCS3Hn9NRsTGQSDOdI=/800x0/article-new/2022/11/calculator-undo.jpg?lossy"
+                                alt="Kalkulator" style="margin-bottom: 5%;margin-left: 20%;"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="container rounded" style="background-color: var(--top-gradient);">
+                    <br>
+                    <h4 id="3">3. Dodijelite funkciju Back Tap</h4>
+                    <div class="row">
+                        <div class="col-sm-8 p-3">
+                            <p>
+                                Back Tap je funkcija pristupačnosti koja vam omogućava da dodijelite radnju koja će se
+                                pokrenuti kada dvaput ili triput dodirnete stražnju stranu svog iPhone-a. Možete ga
+                                koristiti
+                                da pokrenete određenu aplikaciju ili pozovete Kontrolni centar, uključite/isključite
+                                zaključavanje
+                                rotacije, aktivirate zumiranje, pokrenete kameru ili čak pokrenete prečicu. Da biste
+                                dodijelili
+                                radnju dvostrukom ili trostrukom dodiru, idite na Postavke -> Pristupačnost, a zatim pod
+                                "Fizički i motorni" dodirnite Dodir. Pomaknite se prema dolje i dodirnite Nazad Tap,
+                                dodirnite
+                                Dvostruki dodir ili Trostruki dodir da postavite radnju koja će se pokrenuti, a zatim
+                                odaberite
+                                radnju sa liste koju želite pokrenuti.
+                            </p>
+                        </div>
+                        <div class="col-sm-5 p-2"><img class="rounded"
+                                src="https://images.macrumors.com/t/FGHEIoaJS23xN6z7GT7uBVZH1CA=/800x0/article-new/2022/11/2how-to-back-tap-iphone.jpg?lossy"
+                                alt="Double tap funkcija" style="margin-bottom: 5%;margin-left: 20%;"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="container rounded" style="background-color: var(--top-gradient);">
+                    <br>
+                    <h4 id="4">4. Prevucite jačinu zvuka</h4>
+                    <div class="row">
+                        <div class="col-sm-8 p-3">
+                            <p>
+                                Prilikom prilagođavanja jačine zvuka vašeg iPhone-a, zašto više puta
+                                pritiskati tipke za jačinu zvuka kada možete pritisnuti jednom,
+                                a zatim prstom kontrolirati traku za jačinu zvuka na ekranu.
+                            </p>
+                        </div>
+                        <div class="col-sm-5 p-2"><img class="rounded"
+                                src="https://images.macrumors.com/t/D5sddo3sD0GhjpXssCOh7dc8-CY=/800x0/article-new/2022/11/drag-volume.jpg?lossy"
+                                alt="iPhone 14" style="margin-bottom: 5%;margin-left: 20%;"></div>
+                        <div class="col-sm-8 p-3">
+                            <p>
+                                Ne samo da je ovo brži način da povećate ili smanjite jačinu zvuka,
+                                već vam daje i daleko detaljniju kontrolu koja će vam pomoći da pronađete
+                                svoju slatku tačku, slično dugom pritisku na traku za jačinu zvuka u Kontrolnom centru.
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container rounded" style="background-color: var(--top-gradient);">
+                    <br>
+                    <h4 id="5">5. Koristite skrivenu dodirnu tablu</h4>
+                    <div class="row">
+                        <div class="col-sm-8 p-3">
+                            <p>
+                                Da li ste znali da virtuelna tastatura ima skrivenu dodirnu tablu?
+                                Samo dugo pritisnite razmaknicu i tastatura će se isprazniti i
+                                pretvoriti se u trackpad, omogućavajući vam da brzo pomerate kursor
+                                na ekranu kroz tekst koji ste napisali.
+                            </p>
+                        </div>
+                        <div class="col-sm-5 p-2"><img class="rounded"
+                                src="https://images.macrumors.com/t/CIzSQcWFuT942WHQEZ8ITdZBHn4=/800x0/article-new/2022/11/hidden-trackpad.jpg?lossy"
+                                alt="iPhone 14" style="margin-bottom: 5%;margin-left: 20%;"></div>
+                        <div class="col-sm-8 p-3">
+                            <p>
+                                Možda ste već znali za ovaj savjet. Ali jeste li znali da ako
+                                dodirnete dodirnu ploču drugim prstom, također možete odabrati tekst?
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container rounded" style="background-color: var(--top-gradient);">
+                    <br>
+                    <h4 id="6">6. Dugo pritisnite tipke za povratak</h4>
+                    <div class="row">
+                        <div class="col-sm-8 p-3">
+                            <p>
+                                Ako imate nekoliko menija duboko u sistemskoj aplikaciji
+                                kao što je Postavke, ne morate više puta dodirnuti gornje lijevo
+                                dugme Nazad da biste se vratili na gornji meni. Umjesto toga
+                                jednostavno ga dugo pritisnite da biste dobili skočni prikaz
+                                prethodnih ekrana na koji možete dodirnuti da se vratite direktno.
+                            </p>
+                        </div>
+                        <div class="col-sm-5 p-2"><img class="rounded"
+                                src="https://images.macrumors.com/t/0uhHIJSUzbOppecuYoQcWoD_iOs=/800x0/article-new/2022/11/back-button.jpg?lossy"
+                                alt="iPhone 14 postavke" style="margin-bottom: 5%;margin-left: 20%;"></div>
+                    </div>
+                </div>
+                <br>
+                <div class="container rounded" style="background-color: var(--top-gradient);">
+                    <br>
+                    <h4 id="7">7. Brzopotezni video</h4>
+                    <div class="row">
+                        <div class="col-sm-8 p-3">
+                            <p>
+                                Na iPhone 11 i novijim modelima, možete snimati video zapise
+                                čak i bez isključivanja zadanog režima fotografije. Da snimite
+                                brzi video u aplikaciji Kamera, samo pritisnite i držite dugme
+                                zatvarača, a zatim ga otpustite da zaustavite snimanje.
+                            </p>
+                        </div>
+                        <div class="col-sm-5 p-2"><img class="rounded"
+                                src="https://images.macrumors.com/t/CNfQHgPL9JF-89UxgfKcLNtcIVk=/800x0/article-new/2022/11/how-to-shoot-video-using-quicktake-iphone-11.jpg?lossy"
+                                alt="iPhone 14 kamera" style="margin-bottom: 5%;margin-left: 20%;"></div>
+                        <div class="col-sm-8 p-3">
+                            <p>
+                                Da biste nastavili da snimate video bez držanja dugmeta, povucite
+                                dugme zatvarača u krajnju desnu stranu. Zatvarač će se elastično
+                                rastegnuti pod vašim prstom dok to radite i pojavit će se ikona
+                                katanca. Kada se stavi na katanac, dugme zatvarača će ostati tamo
+                                sve dok snimate video. Takođe možete dodirnuti okidač da snimite
+                                fotografiju tokom snimanja. Kada budete spremni da prestanete da
+                                snimate video, jednostavno dodirnite dugme za snimanje ispod tražila.
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container rounded" style="background-color: var(--top-gradient);">
+                    <br>
+                    <h4 id="8">8. Kopirajte i zalijepite uređivane fotografije</h4>
+                    <div class="row">
+                        <div class="col-sm-8 p-3">
+                            <p>
+                                Ako imate više fotografija koje želite urediti na isti način,
+                                ili ako ste unijeli promjene na jednoj fotografiji koju želite
+                                replicirati na druge fotografije, koristite nove alate za uređivanje
+                                kopiranja i lijepljenja u iOS 16.
+                            </p>
+                        </div>
+                        <div class="col-sm-5 p-2"><img class="rounded"
+                                src="https://images.macrumors.com/t/l84NpiOX6m51_-iVmtgglCH7Whk=/800x0/article-new/2022/09/ios-16-photos-copy-paste-edits-how-to.jpg?lossy"
+                                alt="iPhone 14 kamera" style="margin-bottom: 5%;margin-left: 20%;"></div>
+                        <div class="col-sm-8 p-3">
+                            <p>
+                                U aplikaciji Fotografije prvo otvorite sliku, zatim dodirnite Uredi
+                                i izvršite željena podešavanja. Kada završite, tapnite na Gotovo,
+                                a zatim dodirnite ikonu elipse (tri tačke) u gornjem desnom uglu
+                                interfejsa. Odatle dodirnite Kopiraj uređivanja u padajućem meniju
+                                da kopirate sve što ste uradili sa slikom u međuspremnik. Zatim
+                                otvorite još jednu fotografiju ili odaberite više fotografija u
+                                svojoj biblioteci, ponovo dodirnite ikonu elipse, a zatim dodirnite
+                                Zalijepi izmjene da biste dobili potpuno ista podešavanja.
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container rounded" style="background-color: var(--top-gradient);">
+                    <br>
+                    <h4 id="9"></h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Br.</th>
+                                <th>Naslov</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Brzo prebacivanje sa brojeva na slova</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Uklonite posljednji broj u izračunima</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Dodijelite funkciju Back Tap</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Prevucite jačinu zvuka</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Koristite skrivenu dodirnu tablu</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Dugo pritisnite tipke za povratak</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Brzopotezni video</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Kopirajte i zalijepite uređivane fotografije</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+            </div>
+            <br>
+
+            <div class="container-fluid text-center" id="blog2-vise"><button type="submit"
+                    class="btn btn-primary rounded" onClick="blog2Dodatno()">Prikaži više</button></div>
+            <div class="container-fluid text-center" id="blog2-manje" style="display: none;"><a href="#pocetak2"><button
+                        type="submit" class="btn btn-primary rounded" onClick="blog2Skraceno()">Prikaži
+                        manje</button></a></div>
+            <br>
+        </div>
+        <br>
+    </article>
+    <br>
+    <br>
+    <br>
+
+    <div class="text-center mt-5"><a href="#naslov1"><button class="btn" id="vratiSeBtn">Vrati se</button></a></div>
+    <section id="footer">
+        <footer class="footer">
+            <div class="container col-sm-7">
+                <div style="height: 50px;"></div>
+                <form class="p-2" onsubmit="">
+                    <input type="text" class="form-control mb-3" id="ime" placeholder="Ime" name="ime"
+                        autocomplete="off">
+                    <input type="text" class="form-control mb-3" id="prezime" placeholder="Prezime" name="prezime"
+                        autocomplete="off">
+                    <input type="email" class="form-control mb-3" id="email" placeholder="E-mail" name="email"
+                        autocomplete="off">
+                    <input type="text" class="form-control mb-3" id="naslov1" placeholder="Naslov" name="naslov"
+                        autocomplete="off">
+                    <div class="mb-3"><textarea class="form-control" rows="5" id="poruka" name="text"
+                            placeholder="Poruka"></textarea></div>
+                    <button id="submitFormBtn" type="submit" class="btn-block  mb-3 rounded">Pošalji</button>
+                </form>
+            </div>
+            <div class="container">
+                <ul class="social_footer_ul">
+                    <li><a href="https://www.linkedin.com/in/amar-osmanovic" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.instagram.com/amchiio/" target="_blank"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/amchiiio" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="mailto:amar.osmanovic07@gmail.com" target="_blank"><i
+                                class="fa-regular fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="container bottom_border" style="margin-top: 1%;"></div>
+            <p class="text-center" style="margin-top: 2%;">Copyright @2022 | Designed by <a href="#headerPozadina">Amar
+                    Osmanović</a></p>
+        </footer>
+    </section>
+</body>
+
+<script>
+    $enable - smooth - scroll
+    $enable - transitions
+
+    function blog1Dodatno() {
+        document.getElementById('Blog1Nastavak').style.display = "block";
+        document.getElementById('blog1-vise').style.display = "none";
+        document.getElementById('blog1-manje').style.display = "block";
+    }
+    function blog1Skraceno() {
+        document.getElementById('Blog1Nastavak').style.display = "none";
+        document.getElementById('blog1-vise').style.display = "block";
+        document.getElementById('blog1-manje').style.display = "none";
+    }
+
+    function blog2Dodatno() {
+        document.getElementById('Blog2Nastavak').style.display = "block";
+        document.getElementById('blog2-vise').style.display = "none";
+        document.getElementById('blog2-manje').style.display = "block";
+    }
+    function blog2Skraceno() {
+        document.getElementById('Blog2Nastavak').style.display = "none";
+        document.getElementById('blog2-vise').style.display = "block";
+        document.getElementById('blog2-manje').style.display = "none";
+    }
+</script>
+
+</html>

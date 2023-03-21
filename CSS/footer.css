@@ -1,0 +1,108 @@
+@import "https://use.fontawesome.com/releases/v6.2.0/css/all.css";
+
+
+footer {
+   width: 100%;
+   background-color: var(--primary-color);
+   min-height: 250px;
+   padding: 10px 0px 25px 0px;
+}
+
+
+
+input[type="text"],
+input[type="text"]:focus,
+input[type="text"]::placeholder,
+input[type="email"],
+input[type="email"]:focus,
+input[type="email"]::placeholder,
+.footer textarea,
+.footer textarea:focus,
+.footer textarea::placeholder {
+   background-color: var(--navBar-color);
+   color: var(--secondary-text);
+   border: none;
+   box-shadow: none;
+
+}
+
+.footer textarea::placeholder {
+   font-style: italic;
+}
+
+#submitFormBtn {
+
+   color: var(--primary-text);
+   background-color: var(--accent-color);
+   border-color: var(--accent-color);
+
+}
+
+#submitFormBtn:hover {
+   background-color: var(--accent-color-hover);
+   color: var(--primary-text);
+   border-color: var(--accent-color-hover);
+}
+
+footer p {
+   font-size: 13px;
+   color: var(--white);
+   padding-bottom: 0px;
+   margin-bottom: 8px;
+}
+
+
+
+.bottom_border {
+   border-bottom: 1px solid var(--white);
+   padding-bottom: 20px;
+}
+
+
+.social_footer_ul {
+   display: table;
+   margin: 15px auto 0;
+   padding: 0;
+   list-style-type: none;
+}
+
+.social_footer_ul li {
+   padding-left: 20px;
+   padding-top: 10px;
+   float: left
+}
+
+.social_footer_ul li:first-child {
+   padding-left: 0px;
+   padding-top: 10px;
+   float: left
+}
+
+.social_footer_ul li a {
+   color: var(--secondary-text);
+   border: 1px solid var(--secondary-text);
+   padding: 10px;
+   border-radius: 50%;
+}
+
+.social_footer_ul li:hover a:hover {
+   color: var(--primary-text);
+   border: 1px solid var(--primary-text);
+   padding: 12px;
+}
+
+.social_footer_ul li i {
+   width: 20px;
+   height: 20px;
+   text-align: center;
+
+}
+
+#vratiSeBtn {
+   background-color: var(--accent-color);
+   color: var(--white);
+}
+
+#vratiSeBtn:hover {
+   background-color: var(--accent-color-hover);
+}

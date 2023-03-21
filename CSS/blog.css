@@ -1,0 +1,41 @@
+article h4,
+p,
+li {
+    color: var(--primary-text);
+}
+
+article #sadrzajBtn,
+article [type="submit"] {
+    background-color: var(--accent-color);
+    border: none;
+}
+
+article #sadrzajBtn:hover,
+article [type="submit"]:hover {
+    background-color: var(--accent-color-hover);
+}
+
+article #sadrzajBtn:focus,
+article [type="submit"]:focus {
+    box-shadow: none;
+}
+
+.dropdown-menu,
+.dropdown-menu a {
+    background-color: var(--background-color);
+    color: var(--secondary-text);
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--bottom-gradient);
+    color: var(--accent-color);
+}
+
+.row {
+    overflow: hidden;
+}
+
+table th,
+table td {
+    color: white;
+}

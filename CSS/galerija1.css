@@ -1,0 +1,18 @@
+* {
+  background-color: var(--background-color);
+  color: var(--primary-text);
+}
+
+
+body {
+  background-color: var(--background-color) !important;
+  border: none !important;
+}
+
+h4 {
+  color: var(--secondary-text);
+}
+
+li {
+  text-decoration: none;
+}

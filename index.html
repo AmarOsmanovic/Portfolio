@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ba">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/navBar.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amar Osmanović</title>
+  <link rel="icon" href="SLIKE/icons8-inspect-code-16.png">
+</head>
+
+<body>
+  <div class="container-fluid" id="naslov"><img id="headerPozadina"
+      src="SLIKE/network_connections_interlacing_133020_1920x1200.jpg" alt="Pozadinska slika">
+    <div class="container-fluid p-5  text-white text-center" id="naslovText">
+      <h1>Amar Osmanović</h1>
+      <p>student Prirodno-matematičkog fakulteta.</p>
+      <a href="#oMeni"><button type="button" class="btn btn-outline-primary">Početak</button></a>
+
+    </div>
+  </div>
+
+
+
+  <nav class="navbar sticky-top bg">
+    <a id="navv" href="#headerPozadina"><img src="SLIKE/navSlika.png" id="profilnaSlika" alt="Slika autora"></a>
+    <button id="navHamburger" class="btn btn-primary" data-bs-toggle="offcanvas" href="#offCanvas" role="button"
+      aria-controls="offcanvasExample"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+
+  <header class="navBar">
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offCanvas"
+      aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offCanvasLabel" style="padding-left: 16px;">Meni</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-group list-group-flush">
+          <a href="#headerPozadina">
+            <li class="list-group-item" data-bs-dismiss="offcanvas"><i class="fa-solid fa-house"
+                style="padding-right: 0.6rem;"></i>Početna</li>
+          </a>
+          <a href="#oMeni">
+            <li class="list-group-item" data-bs-dismiss="offcanvas"><i class="fa-solid fa-user"
+                style="padding-right: 0.68rem; padding-left: 0.14rem;"></i>O meni</li>
+          </a>
+          <a href="#maturski">
+            <li class="list-group-item" data-bs-dismiss="offcanvas"><i class="fa-solid fa-pen"
+                style="padding-right: 0.51rem; padding-left: 0.13rem;"></i>Maturski rad</li>
+          </a>
+          <a href="#obrazovanje">
+            <li class="list-group-item" data-bs-dismiss="offcanvas"><i class="fa-solid fa-graduation-cap"
+                style="padding-right: 0.41rem;"></i>Obrazovanje</li>
+          </a>
+          <a href="#projekti">
+            <li class="list-group-item" data-bs-dismiss="offcanvas"><i class="fa-solid fa-rocket"
+                style="padding-right: 0.54rem;"></i>Projekti</li>
+          </a>
+          <a href="HTML/blog.html">
+            <li class="list-group-item" data-bs-dismiss="offcanvas"><i class="fa-solid fa-layer-group"
+                style="padding-right: 0.51rem;"></i>Blog</li>
+          </a>
+          <a href="HTML/galerija1.html">
+            <li class="list-group-item" data-bs-dismiss="offcanvas"><i class="fa-solid fa-images"
+                style="padding-right: 0.58rem;"></i>Prva galerija</li>
+          </a>
+          <a href="HTML/galerija2.html">
+            <li class="list-group-item" data-bs-dismiss="offcanvas"><i class="fa-solid fa-images"
+                style="padding-right: 0.58rem;"></i>Druga galerija</li>
+          </a>
+          <a href="#footer">
+            <li class="list-group-item" style="border-bottom:none;" data-bs-dismiss="offcanvas"><i
+                class="fa-sharp fa-solid fa-phone" style="padding-right: 0.6rem;"></i>Kontakt</li>
+          </a>
+        </ul>
+        <div class="container bottom_border" style="border-bottom-color: var(--bottom-text);"></div>
+
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" id="searchForm" type="search" placeholder="Upiši.." aria-label="upiši.."
+              autocomplete="off">
+            <button class="btn btn-outline-success" id="searchBtn" type=""
+              data-bs-dismiss="offcanvas">Pretražuj</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+  <section id="oMeni">
+    <div class="container-fluid p-3 text-white text-center" id="naslovna"
+      style="background-color: var(--bottom-gradient);">
+      <h1>O meni</h1>
+    </div>
+    <div class="row p-3 d-inline-flex" style="margin: 0;">
+      <div class="col-md-3 p-3 text-center" style="height:300px"><img class=" img-fluid rounded"
+          src="SLIKE/IMG_3460.jpg" alt="Slika autora"></div>
+      <div class="col-md-5 p-3 ">
+        <h5 class="card-title mb-3">Amar Osmanović</h5>
+        <p class="card-text ">rođen 2001. godine u Sarajevu, Bosna i Hercegovina. Osnovno
+          obrazovanje završio sam na Ilidži, u <a href="https://ospeta.edu.ba/" target="_blank">Petoj osnovnoj
+            školi</a>, a potom <a href="https://cetvrta-gimnazija.edu.ba/" target="_blank">Četvrtu gimnaziju</a>.
+          Trenutno sam student na <a href="https://pmf.unsa.ba/" target="_blank">Prirodno-matematičkom fakultetu</a> na
+          smjeru Informacione
+          Tehnologije.</p>
+      </div>
+      <div class="col-md-4 p-3">
+        <table class="table table-borderless">
+          <tr>
+            <th>Godine: </th>
+            <td>20</td>
+          </tr>
+          <tr>
+            <th>Telefon: </th>
+            <td><a href="tel:062350721">062/350-721</a></td>
+          </tr>
+          <tr>
+            <th>E-mail: </th>
+            <td><a href="mailto:amar.osmanovic@gmail.com">amar.osmanovic07@gmail.com</a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="maturskiRad" id="maturski">
+    <div class="container-fluid p-4 text-white text-center" id="naslovna"
+      style="background-color: var(--bottom-gradient);">
+      <h1>Maturski rad</h1>
+    </div>
+
+    <main class="rounded" style="margin-bottom: 8%;">
+      <div class="container-fluid p-4 text-white text-left" id="maturskiRadNaslov">
+        <h1>Kreiranje baze podataka za web stranicu aviokompanije</h1>
+      </div>
+      <div class="container col-md-12">
+        <p>Ideja projekta je da se kreira jednostavna i jedinstvena stranica pomoću koje će korisnici
+          moći uvidjeti detalje dostupnih avionskih letova. Željenoj avionskoj karti moći će pristupiti
+          jednim klikom i , nakon što unese lične podatke kao i podatke bankovne kartice, kupiti istu.
+          Zamišljeno je da na tu stranicu bude povezana baza podataka koja će prikupljati i spremati
+          sve unsene podatke. Stranica će biti oformljena pomoću HTML i CSS kodova, a baza
+          podataka pomoću SQL koda.</p>
+      </div>
+      <br>
+
+      <div id="dodatno" style="display: none;">
+        <div class="container-fluid p-4 text-white text-left" id="maturskiRadNaslov">
+          <h1>Alati korišteni za realizaciju projekta</h1>
+        </div>
+        <div class="container col-md-12">
+          <p>Alat koji je bio potreban za realizaciju projekta je Micrsoft Visual Studio. Microsoft Visual
+            Studio jeste integrisano razvojno okruženje (IDE) proizveden od strane Microsofta. Koristi
+            se za razvoj računarskih programa za Windows, aplikacija, web stranica...
+            Visual Studio sadrži uređivač izvornog koda koji podržava IntelliSense (komponenta koja
+            predlaže ostatak koda) kao i refaktoriranje koda. Integrisani program za otklanjanje grešaka
+            (debbuger) radi na nivou izvornog i mašinskog koda.
+            Program također sadrži alate poput dizajnera oblika koji se koristi za pravljenje aplikacija s
+            grafičkim korisničkim interfejsom. Prihvata proširenja koja poboljšavaju funkcionalost na
+            skoro svakom nivou dodajući podršku sistema za upravljanje izvornim kodom i dodajući
+            nove nizove alata poput tekstualnih uređivača i vizualnih dizajnera za jezik
+            određenih domena ili za druge dijelove procesa razvoja softvera (poput klijenta Team
+            Explorer).</p>
+        </div>
+
+        <div class="container-fluid p-4 text-white text-left" id="maturskiRadNaslov">
+          <h1>Dijelovi stranice</h1>
+        </div>
+        <div class="container col-md-12">
+          <p>Web stranica se sastoji od više dijelova i to:</p>
+          <ol>
+            <li>Navigacijska traka</li>
+            <li>Login forma</li>
+            <li>“O nama” stranica</li>
+            <li>Lista avio karata</li>
+            <li>Forma za kupovanje karata</li>
+            <li>Kontakt forma i društvene mreže</li>
+          </ol>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="SLIKE/maturskiRad_pocetna.png">
+              <img src="SLIKE/maturskiRad_pocetna.png" alt="Početna stranica" width="600" height="400">
+            </a>
+            <div class="desc">Izgled početne stranice</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="SLIKE/avioKarte.png">
+              <img src="SLIKE/avioKarte.png" alt="Avio Karte" width="600" height="600">
+            </a>
+            <div class="desc">Avionske karte Wizz Air-a</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="SLIKE/loginForma.png">
+              <img src="SLIKE/loginForma.png" alt="Login Forma" width="600" height="400">
+            </a>
+            <div class="desc">Login forma stranice</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="SLIKE/formaPlaćanja.png">
+              <img src="SLIKE/formaPlaćanja.png" alt="Footer" width="600" height="400">
+            </a>
+            <div class="desc">Izgled forme za plaćanje</div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="SLIKE/UneseniPodaci.png">
+              <img src="SLIKE/UneseniPodaci.png" alt="Footer" width="600" height="400">
+            </a>
+            <div class="desc">Izgled unesenih podataka</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="img_5terre.jpg">
+              <img src="SLIKE/footer.png" alt="Footer" width="600" height="400">
+            </a>
+            <div class="desc">Izgled footer-a</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="SLIKE/phpKod.png">
+              <img src="SLIKE/phpKod.png" alt="Footer" width="600" height="400">
+            </a>
+            <div class="desc">Izgled PhP koda</div>
+          </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="SLIKE/sqlKod.png">
+              <img src="SLIKE/sqlKod.png" alt="Footer" width="600" height="400">
+            </a>
+            <div class="desc">Izgled SQL koda</div>
+          </div>
+        </div>
+        <div class="container-fluid mt-3" style="overflow: hidden;">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Mentor/ica:</th>
+                <th>Naziv ustanove:</th>
+                <th>Adresa:</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="color: var(--secondary-text);">Semir Terzo, prof.</td>
+                <td style="color: var(--secondary-text);">Četvrta Gimnazija</td>
+                <td style="color: var(--secondary-text);">Mala aleja 69</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="container-fluid text-center" id="matVise"><button type="submit" class="btn btn-primary rounded"
+          onClick="maturskiDodatno()">⮟</button></div>
+      <div class="container-fluid text-center" id="matManje" style="display: none;"><a href="#maturski"><button
+            type="button" class="btn btn-primary rounded" onClick="maturskiSkraceno()">⮝</button></a></div>
+    </main>
+  </section>
+  <section id="obrazovanje" style="margin-bottom: 8%;">
+    <div class="container-fluid p-4 text-white text-center" id="naslovna"
+      style="background-color: var(--bottom-gradient);">
+      <h1>Obrazovanje</h1>
+    </div>
+    <br>
+    <div class="container-fluid p-4 mt-3 rounded ">
+      <div class="container-fluid mt-3" id="ob" style="overflow: hidden;">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th class="col-sm-1">Period</th>
+              <th class="col-sm-2">Smijer</th>
+              <th class="col-sm-3">Zvanje</th>
+              <th class="col-sm-3">Ustanova</th>
+              <th class="col-sm-1">Grad</th>
+              <th class="col-sm-2">Adresa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2008-2017</td>
+              <td>/</td>
+              <td>/</td>
+              <td>Peta osnovna škola</td>
+              <td>Sarajevo</td>
+              <td>Umihana Čuvidina 58</td>
+            </tr>
+            <tr>
+              <td>2017-2021</td>
+              <td>Informacione Tehnologije</td>
+              <td>Programer</td>
+              <td>Četvrta gimnazija Ilidža</td>
+              <td>Sarajevo</td>
+              <td>Mala aleja 69</td>
+            </tr>
+            <tr>
+              <td>2022-</td>
+              <td>Informacione Tehnologije</td>
+              <td>Stručni specijalista informacionih tehnologija</td>
+              <td>Četvrta gimnazija Ilidža</td>
+              <td>Sarajevo</td>
+              <td>Zmaja od Bosne 33-35</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="container-fluid mt-3 text-center" style="overflow: hidden;">
+        <table class="table table-borderless ">
+          <tbody id="softSkills">
+            <tr>
+              <td class="col-sm-2">Kolegijalnost</td>
+              <td class="col-sm-10">
+                <div class="progress">
+                  <div class="progress-bar" style="width:80%"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-sm-2">Timski rad</td>
+              <td class="col-sm-10">
+                <div class="progress">
+                  <div class="progress-bar" style="width:90%"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-sm-2">Kritično mišljenje</td>
+              <td class="col-sm-10">
+                <div class="progress">
+                  <div class="progress-bar" style="width:85%"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-sm-2">Kreativnost</td>
+              <td class="col-sm-10">
+                <div class="progress">
+                  <div class="progress-bar" style="width:90%"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-sm-2">Disciplina</td>
+              <td class="col-sm-10">
+                <div class="progress">
+                  <div class="progress-bar" style="width:95%"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-sm-2">Samopouzdanje</td>
+              <td class="col-sm-10">
+                <div class="progress">
+                  <div class="progress-bar" style="width:90%"></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <section id="projekti">
+    <div class="container-fluid p-4 text-white text-center" id="naslovna"
+      style="background-color: var(--bottom-gradient);">
+      <h1>Projekti</h1>
+    </div>
+    <br>
+    <article class="container rounded" style="background-color: rgb(110, 110, 110);">
+      <br>
+      <h2 class="text-center">Zoetrope</h2>
+      <h6 class="text-center">ARDUINO PROJEKAT</h6>
+      <p class="text-right" style="font-size: 12px; color: var(--secondary-text);">Sarajevo, Novembar 2019.</p>
+      <div class="container rounded col-sm-6" style="background-color: var(--top-gradient);">
+        <br>
+        <div class="row">
+          <div class="p-3">
+            <p>Projekat je osmišljen tako da Arduino bude spojen na
+              ploču i da putem H mosta na njoj kontroliše motorić.
+              Zavisno od H mosta i smijera kretanja struje motorić
+              će se okretati u jednu stranu.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container-fluid text-center" id="pro1Vise"><button type="submit" class="btn btn-primary rounded"
+          onClick="projekat1Dodatno()">⮟</button></div>
+      <br>
+      <div id="projekat1_Vise" style="display: none;">
+        <br>
+        <div class="container rounded" style="background-color: var(--top-gradient); overflow: hidden;">
+          <br>
+          <div class="p-3 text-center">
+            Sljedeća shema ilustrira električni krug H-mosta, sličan onome kako bi Arduino mogao raditi.
+          </div>
+          <div class="p-2"><img class="rounded"
+              src="https://programminginarduino.files.wordpress.com/2016/03/h-bridge-deactivated1.png?w=660&h=304"
+              alt="Kalkulator" style="margin-bottom: 5%;margin-left: 20%;"></div>
+          <p>Ova šema ima 5 komponenti: otpornike,
+            diode, tranzistori, motor i dva izvora napona. U ovom kolu
+            struja ne teče ni u jednom smjeru, jer je prekidač označen
+            zelenom bojom otvoren. Struja se ne kreće preko otpornika
+            koji su spojeni na kapiju tranzistora. Tranzistori, koji
+            djeluju kao "prekidači" ostaju otvoreni. Diode ne dopuštaju
+            struji da teče protiv tako nacrtane 'strelice', stoga je
+            svejedno da li je drugi izvor napona spojen na terminale:
+            nema puta kojim bi struja mogla da ide. Struja ne može uzeti
+            svoj uobičajeni smjer od pozitivnog ka negativnom predznaku.
+            Krug je deaktiviran i motor se ne pomiče
+            <br>
+            <br>
+            Recimo da okrećemo označeni zeleni prekidač u položaj SW1.
+            Ovi otpornici će uključiti "digitalni prekidač". Sada će napon primijenjen na kapiju
+            tranzistora omogućiti struji da teče od izvora do odvoda. Ideja
+            je da struja ima put kroz motor i tako se motor okreće.
+          </p>
+          <div class="p-2"><img class="rounded"
+              src="https://programminginarduino.files.wordpress.com/2016/03/h-bridge-clockwise.png?w=660&h=278"
+              alt="Strujno kolo" style="margin-bottom: 5%;margin-left: 20%;"></div>
+          <p>
+            Ako zeleni prekidač zauzme drugu poziciju, napajani otpornici su R1 i R4, kao što
+            je prikazano na donjoj slici. Struja teče u drugom smjeru pa se
+            motor okreće u smjeru suprotnom od kazaljke na satu.
+          </p>
+
+          <div class="p-2"><img class="rounded"
+              src="https://programminginarduino.files.wordpress.com/2016/03/h-bridge-anticlockwise.png?w=660&h=333"
+              alt="Strujno kolo" style="margin-bottom: 5%;margin-left: 20%;"></div>
+          <p>Ovo je prvo integrisano kolo s kojim se susrećemo i
+            bilo je zanimljivo saznati kako radi iznutra. Na istom
+            mjestu gdje smo dobili sve ove informacije, postojala
+            je šema za izgradnju H-mosta sa Arduinom u velikim razmjerima.
+            Možda ćemo kasnije objaviti još jedan video ako nađemo vremena
+            da ga sami napravimo.</p>
+          <div class="p-2"><img class="rounded"
+              src="https://programminginarduino.files.wordpress.com/2016/03/h-bridge-arduino.png?w=320&h=366"
+              alt="Integrisano kolo" style="margin-bottom: 5%;margin-left: 20%;"></div>
+          <p>Ukratko H-most polarizira napon koji se primjenjuje
+            da bi se motor okrenuo na ovaj ili onaj način.
+            Da se vratimo na projekat, integrišemo motor u zoetrop
+            napravljen od kartona, koji se može izgraditi slijedeći ove upute.</p>
+          <div class="p-2"><img class="rounded"
+              src="https://programminginarduino.files.wordpress.com/2016/03/p10-circuit.png?w=522&h=298" alt="Arduino"
+              style="margin-bottom: 5%;margin-left: 20%;"></div>
+          <p>ostoje dva prekidača: jedan služi za uključivanje ili
+            isključivanje motora, a drugi za promjenu smjera u kojem
+            se motor okreće. Potenciometar će regulirati brzinu. Kao
+            i prije, trebat će nam baterija od 9V za napajanje motora.
+            H-Bridge ima mnogo iglica koje ćemo uskoro pokušati objasniti.</p>
+          <div class="p-2"><img class="rounded"
+              src="https://programminginarduino.files.wordpress.com/2016/03/h-bridge-laypins.jpg?w=578&h=345"
+              alt="Arduino iznutra" style="margin-bottom: 5%;margin-left: 20%;"></div>
+          <p>Ovaj IC nam omogućava da povežemo i kontrolišemo dva različita
+            motora, jer ima po jedan most sa svake strane. Pinovi pod
+            nazivom EN omogućavaju ili onemogućuju motor u zavisnosti
+            od ulaznog napona. Svaki pin omogućava spajanje motora na
+            terminale odvojene zarezima. Logički pinovi označeni sa A
+            čine da se motor okreće lijevo ili desno, ili bilo šta što
+            je naznačeno u tabeli. Terminali motora su priključeni na Y
+            pinove. Srednji pinovi služe kao uzemljenje, a dva lijevo su
+            za napajanje.</p>
+          <br>
+          <div class="text-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/WhGqkLNShR0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe></div>
+          <p class="text-center">Video projekta</p>
+          <br>
+          <div class="container-fluid text-center" id="pro1Manje" style="display: none;"><a href="#projekti"><button
+                type="button" class="btn btn-primary rounded" onClick="projekat1Skraceno()">⮝</button></a></div>
+          <br>
+        </div>
+      </div>
+      <br>
+    </article>
+    <div class="container bottom_border" style="margin-top: 1%; border-bottom-color: var(--secondary-text);"></div>
+    <br>
+    <article class="container rounded" style="background-color: rgb(110, 110, 110);">
+      <br>
+      <h2 class="text-center" id="microbitNaslov">Brojač koraka</h2>
+      <h6 class="text-center">MICRO:BIT</h6>
+      <p class="text-right" style="font-size: 12px; color: var(--secondary-text);">Sarajevo, April 2020.</p>
+      <div class="container rounded col-sm-12" style="background-color: var(--top-gradient);">
+        <br>
+        <h4>1. korak: Napravi</h4>
+        <br>
+        <h5>Što je to?</h5>
+        <br>
+        <p>Od micto:bita pravim brojač koraka kako bi pratio svoju fizičku aktivnost, a ujedno naučio malo više o
+          kodiranju!
+          Ova dva videa prikazuju način pravljenja i kojim kodom:</p>
+        <div class="row text-center mb-2">
+          <div class="col-md-6"><b>Uvod</b></div>
+          <div class="col-md-6"><b>Vodič za kodiranje</b></div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-6"><iframe width="351" height="197" src="https://www.youtube.com/embed/J4xXHqd2UIs"
+              title="micro:bit at home: step counter show" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe></div>
+          <div class="col-md-6"><iframe width="351" height="197" src="https://www.youtube.com/embed/zOzf5RkFJTk"
+              title="micro:bit at home - step counter code" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe></div>
+        </div>
+        <br>
+        <br>
+        <div id="projekat2_Vise" style="display: none;">
+          <br>
+          <div class="container rounded" style="background-color: var(--top-gradient); overflow: hidden;">
+            <br>
+            <h5>Kako to radi</h5>
+            <br>
+            <ul>
+              <li>Ovaj program koristi micro:bitov brzinomjer kako bi obavio neku radnju.</li>
+              <li>Broji koliko puta se micro:bit potresao. Taj broj sprema u varijablu koja se zove 'koraci'.</li>
+              <li>Varijable se u računalima koriste za pohranjivanje informacija koje se mijenjaju, primjerice broj
+                pređenih koraka.</li>
+              <li>Svaki puta kad micro:bitov brzinomjer osjeti pomak, program poveća varijablu za 1 i novi broj prikaže
+                na LED zaslonukao izlaz.</li>
+            </ul>
+            <br>
+            <h5>Šta ti treba</h5>
+            <br>
+            <ul>
+              <li>micro:bit (ili MakeCode simulator)</li>
+              <li>Uređivač MakeCode ili Python</li>
+              <li>Baterije (prema potrebi)</li>
+              <li>Nešto čime ćeš micro:bit pričvrstiti na cipelu ili nogu - uzica, ljepljiva traka ili čičak.</li>
+            </ul>
+            <br>
+            <h4>2. korak: Kodiraj</h4>
+            <br>
+            <div class="row text-center mb-3">
+              <div class="col-md-6"><b>MakeCode</b></div>
+              <div class="col-md-6"><b>Python</b></div>
+            </div>
+            <div class="row text-center">
+              <div class="col-md-6"><img class="rounded" style="width: 70%;" src="SLIKE/makeCode_microbit.png"
+                  alt="MakeCode kod" style="margin-bottom: 5%;margin-left: 20%;"></div>
+              <div class="col-md-6"><img class="rounded" style="width: 80%;" src="SLIKE/pythonCode_microbit.png"
+                  alt="Python code" style="margin-bottom: 5%;margin-left: 20%;"></div>
+            </div>
+            <br>
+            <h4>3. korak: Unaprijedi</h4>
+            <br>
+            <ul>
+              <li>Dodaj tipku kojom ćeš broj koraka vratiti na 0.</li>
+              <li>Dodaj grafiku koja prikazuje broj pređenih koraka</li>
+              <li>Izmjeri dužinu svoga koraka pa učini da micro:bit pomnoži taj broj s brojem pređenih koraka i tako
+                izračuna daljinu koju si prešao.</li>
+            </ul>
+            <br>
+            <div class="p-2"><img class="rounded"
+                src="https://cdn.sanity.io/images/ajwvhvgo/production/4f3e928c1cc09cb09093da696c2bdf1afaf79b23-3911x2200.jpg?w=653&q=80&fit=max&auto=format"
+                alt="Arduino iznutra" style="margin-bottom: 5%;margin-left: 20%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid text-center" id="pro2Vise"><button type="submit" class="btn btn-primary rounded"
+          onClick="projekat2Dodatno()">⮟</button></div>
+      <div class="container-fluid text-center" id="pro2Manje" style="display: none;"><a href="#microbitNaslov"><button
+            type="button" class="btn btn-primary rounded" onClick="projekat2Skraceno()">⮝</button></a></div>
+      <br>
+      </div>
+      </div>
+      <br>
+    </article>
+  </section>
+
+
+
+
+
+  <div class="text-center mt-5"><a href="#headerPozadina"><button class="btn" id="vratiSeBtn">Vrati se</button></a>
+  </div>
+  <section id="footer">
+    <footer class="footer">
+      <div class="container col-sm-7">
+        <div style="height: 50px;"></div>
+        <form class="p-2">
+          <input type="text" class="form-control mb-3" id="ime" placeholder="Ime" name="ime" autocomplete="off">
+          <input type="text" class="form-control mb-3" id="prezime" placeholder="Prezime" name="prezime"
+            autocomplete="off">
+          <input type="email" class="form-control mb-3" id="email" placeholder="E-mail" name="email" autocomplete="off">
+          <input type="text" class="form-control mb-3" id="naslov1" placeholder="Naslov" name="naslov"
+            autocomplete="off">
+          <div class="mb-3"><textarea class="form-control" rows="5" id="poruka" name="text"
+              placeholder="Poruka"></textarea></div>
+          <button id="submitFormBtn" type="submit" class="btn-block  mb-3 rounded">Pošalji</button>
+        </form>
+      </div>
+      <div class="container">
+        <ul class="social_footer_ul">
+          <li><a href="https://www.linkedin.com/in/amar-osmanovic" target="_blank"><i
+                class="fa-brands fa-linkedin-in"></i></a></li>
+          <li><a href="https://www.instagram.com/amchiio/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/amchiiio" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="mailto:amar.osmanovic07@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="container bottom_border" style="margin-top: 1%;"></div>
+      <p class="text-center" style="margin-top: 2%;">Copyright @2022 | Designed by <a href="#headerPozadina">Amar
+          Osmanović</a></p>
+    </footer>
+  </section>
+
+
+</body>
+
+<script>
+
+
+  function maturskiDodatno() {
+    document.getElementById('dodatno').style.display = "block";
+    document.getElementById('matVise').style.display = "none";
+    document.getElementById('matManje').style.display = "block";
+
+  }
+  function maturskiSkraceno() {
+    document.getElementById('dodatno').style.display = "none";
+    document.getElementById('matVise').style.display = "block";
+    document.getElementById('matManje').style.display = "none";
+  }
+
+  function projekat1Dodatno() {
+    document.getElementById('projekat1_Vise').style.display = "block";
+    document.getElementById('pro1Vise').style.display = "none";
+    document.getElementById('pro1Manje').style.display = "block";
+
+  }
+  function projekat1Skraceno() {
+    document.getElementById('projekat1_Vise').style.display = "none";
+    document.getElementById('pro1Vise').style.display = "block";
+    document.getElementById('pro1Manje').style.display = "none";
+  }
+  function projekat2Dodatno() {
+    document.getElementById('projekat2_Vise').style.display = "block";
+    document.getElementById('pro2Vise').style.display = "none";
+    document.getElementById('pro2Manje').style.display = "block";
+
+  }
+  function projekat2Skraceno() {
+    document.getElementById('projekat2_Vise').style.display = "none";
+    document.getElementById('pro2Vise').style.display = "block";
+    document.getElementById('pro2Manje').style.display = "none";
+  }
+</script>
+
+</html>
